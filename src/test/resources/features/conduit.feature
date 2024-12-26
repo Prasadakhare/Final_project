@@ -12,21 +12,23 @@ When enters Article details
 | Test Title | Test Desc | Content |Tag |
 Then Article must be created
 
-#Scenario: View Article
-#Given User should be on Global Feed page
-#When enters select an article "Test Title"
-#Then Article details page must be created
+Scenario: View Article
+Given User should be on Global Feed page
+When enters select an article "Test Title"
+Then Article details page must be created
 
 
-#Scenario: Update an Article
-#Given Article detail page must be displayed
-#When User update article details
-#Then Article details page must be updated
+Scenario: Update an Article
+Given Article detail page must be displayed
+When User update article details
+| title | Desc | Content |
+| SELE Test | 1st Test | New Content |
+Then Article details page must be updated
 
-#Scenario: Delete an Article
-#Given Article detail page must be displayed
-#When User Delete article
-#Then Article must be deleted
+Scenario: Delete an Article
+Given Article detail page must be displayed
+When User Delete article
+Then Article must be deleted
 
 
 

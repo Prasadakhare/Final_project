@@ -32,7 +32,7 @@ public class TestBase {
 		}
 	}
 	
-	public static WebDriver GetDriver() {
+	public static WebDriver getDriver() {
 		return driver;
 	}
 	

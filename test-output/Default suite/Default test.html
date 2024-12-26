@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 25 17:08:01 IST 2024</td>
+<td>Started on:</td><td>Thu Dec 26 16:33:49 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8084 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15486 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create new Article", "Conduit CRUD Functions"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
-	at stepDefs.ArticleStep.user_should_be_on_new_article_page(ArticleStep.java:20)
-	at ✽.User should be on New Article Page(file:///C:/eclipse/workspace_vineet/FinalProject/src/test/resources/features/conduit.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1083086553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1083086553'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
-	at stepDefs.ArticleStep.user_should_be_on_new_article_page(ArticleStep.java:20)
-	at ✽.User should be on New Article Page(file:///C:/eclipse/workspace_vineet/FinalProject/src/test/resources/features/conduit.feature:9)
+<td title='runner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete an Article", "Conduit CRUD Functions"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;this.driver&quot; is null
+	at pages.ArticlePage.deleteArticle(ArticlePage.java:99)
+	at stepDefs.ArticleStep.user_delete_article(ArticleStep.java:94)
+	at ✽.User Delete article(file:///C:/eclipse/workspace_vineet/FinalProject/src/test/resources/features/conduit.feature:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace671959170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace671959170'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;this.driver&quot; is null
+	at pages.ArticlePage.deleteArticle(ArticlePage.java:99)
+	at stepDefs.ArticleStep.user_delete_article(ArticleStep.java:94)
+	at ✽.User Delete article(file:///C:/eclipse/workspace_vineet/FinalProject/src/test/resources/features/conduit.feature:30)
 </pre></div></td>
-<td>0</td>
+<td>1</td>
 <td>runner.MyTestRunner@78e4deb0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -95,14 +97,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login into App", "Conduit CRUD Functions"</td>
+<td title='runner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create new Article", "Conduit CRUD Functions"</td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>runner.MyTestRunner@78e4deb0</td></tr>
 <tr>
 <td title='runner.MyTestRunner.f()'><b>f</b><br>Test class: runner.MyTestRunner</td>
 <td></td>
 <td>0</td>
+<td>runner.MyTestRunner@78e4deb0</td></tr>
+<tr>
+<td title='runner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View Article", "Conduit CRUD Functions"</td>
+<td></td>
+<td>0</td>
+<td>runner.MyTestRunner@78e4deb0</td></tr>
+<tr>
+<td title='runner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login into App", "Conduit CRUD Functions"</td>
+<td></td>
+<td>2</td>
+<td>runner.MyTestRunner@78e4deb0</td></tr>
+<tr>
+<td title='runner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update an Article", "Conduit CRUD Functions"</td>
+<td></td>
+<td>1</td>
 <td>runner.MyTestRunner@78e4deb0</td></tr>
 </table><p>
 </body>

@@ -13,23 +13,24 @@ import io.cucumber.java.en.When;
 import pages.LoginPage;
 
 public class LoginStep {
-		WebDriver driver=TestBase.GetDriver();
+		WebDriver driver=TestBase.getDriver();
 		LoginPage loginPage;
 		
-//		public LoginStep() {
-//			loginPage=new LoginPage(driver);
-//		}
+		public LoginStep() {
+			loginPage=new LoginPage(driver);
+		}
 	 
 		@Given("User is on Login page")
 		public void user_is_on_login_page() {
 			
-		    driver=new ChromeDriver();
-		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-
-		    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
-		    driver.get("https://conduit-realworld-example-app.fly.dev/");
+//		    driver=new ChromeDriver();
+//		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+//
+//		    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
+//		    driver.get("https://conduit-realworld-example-app.fly.dev/");
+			TestBase.openUrl("https://conduit-realworld-example-app.fly.dev/");
 	
-		    loginPage=new LoginPage(driver);
+//		    loginPage=new LoginPage(driver);
 		    
 		    loginPage.ClickLogin();
 		    
