@@ -2,7 +2,7 @@ Feature: Conduit CRUD Functions
 
 Scenario: Login into App
 Given User is on Login page
-When User provides "vineetpatil2325@gmail.com" and "P@ssw0rd"
+When User provides "prasadakhare2003@gmail.com" and "Prasad@2003"
 Then User should be on Home Page 
 
 Scenario: Create new Article
